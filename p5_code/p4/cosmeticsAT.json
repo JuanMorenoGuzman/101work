@@ -1,0 +1,47 @@
+  {
+         "items2":[
+            {
+               "name":"Black Knight",
+               "avgStars":"4.36",
+               "cost":"0",
+               "description": "The odious scourge of Wailing.",
+               "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/f3d0ee3316df5a64ae286aeb4e0abc69.png"
+
+            },
+            {
+               "name":"Marshmello",
+               "avgStars":"4.45",
+               "cost":"1500",
+               "description": "Start the party.",
+               "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/ee7ed4fb103c3f89fc41cba189bae7d1.png"
+            },
+            {
+               "name":"Ark",
+               "avgStars":"3.93",
+               "cost":"2000",
+               "description": "Pristine plumage.",
+               "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/f2104578468f47ad53c497d745b6c131.png"
+            },
+            {
+               "name":"Renegade Raider",
+               "avgStars":"4.55",
+               "cost":"1200",
+               "description": "Season Shop (Season 1)",
+               "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/0be09dd605f0b6e12fccaa4814fce690.png"
+            },
+            {
+               "name":"A.I.M.",
+               "avgStars":"3.64",
+               "cost":"0",
+               "description": "Scanning area for targets",
+               "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/b2598e4912ecd7116b0f4680aecc0dff.png"
+            },
+            {
+               "name":"Malcore",
+               "avgStars":"3.74",
+               "cost":"1500",
+               "description": "Malevolent to the core",
+               "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/98a5fee5b66ac9356308105af28acb11.png"
+      }
+   ]
+}

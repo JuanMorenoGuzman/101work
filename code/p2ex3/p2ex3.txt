@@ -1,0 +1,77 @@
+
+String[] namechoice = {"Rambo","Bill","Martin","Arnorld","Amelia"};
+
+
+int count = 35;
+float[] posX = new float[count]; 
+float[] posY = new float[count];
+float[] speedX = new float[count];
+float[] speedY = new float[count];
+float[] sizeW = new float[count];
+float[] sizeH = new float[count];
+int[] colorsR = new int[count];
+int[] colorsB = new int[count];
+int[] colorsG = new int[count];
+int[] alpha = new int[count];
+int[] Nexus = new int[count];
+
+
+String[] names = new String[count];
+
+
+void setup() { 
+  //frameRate(5);
+  size(800, 800);
+  background(0);
+  //noStroke();
+  for (int i=0; i < posX.length; i++) { 
+    posX[i] = width/2; 
+    posY[i] = height/2; 
+    speedX[i] = random(-5, 5); 
+    speedY[i] = random(-5, 5); 
+    sizeW[i] = random(20, 150); 
+    sizeH[i] = random(255, 100); 
+    colorsR[i] = int(random(100, 255));
+    colorsG[i] = int(random(100, 255));
+    colorsB[i] = int(random(100, 255));
+    alpha[i] = int(random(50, 255));
+    Nexus[i] = int(random(50, 100));
+
+    names[i] = namechoice[  int(round(random(4)))   ];
+  }
+} 
+void draw() { 
+  //saveFrame("frames/ex1-#####.png");
+  //background(155); 
+  fill(255,20);
+  rect(0,0,width, height);
+  
+  fill(255); 
+  //rect(40, 40, width-80, height-80); 
+  for (int i = 0; i < posX.length; i++) { 
+    
+
+    if (posX[i] < 40+sizeW[i]/2 || posX[i] > (width-40)-sizeW[i]/2 ) { 
+      speedX[i] = -speedX[i];
+    } 
+    if (posY[i] < 40+sizeW[i]/2 || posY[i] > (height-40)-sizeW[i]/2) { 
+      speedY[i] = -speedY[i];
+    }
+    
+     //update all positions 
+    posX[i] += speedX[i]; 
+    posY[i] += speedY[i]; 
+    //draw all balls 
+    fill(colorsR[i],colorsG[i],colorsB[i], alpha[i]); 
+    ellipse(posX[i], posY[i], sizeW[i], sizeW[i]);
+    
+    fill(Nexus[i]);
+    line(posX[i], posY[i], sizeW[i], sizeW[i]);
+    //check boundaries for all balls 
+    
+    fill(random(140));
+    text(names[i],posX[i], posY[i]);
+    
+    
+  }
+} 

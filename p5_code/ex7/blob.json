@@ -1,0 +1,65 @@
+{
+  "toons": [
+
+{
+  "name":"Jupiter",
+  "r":128,
+  "g":143,
+  "b":153,
+  "head": 160,
+  "posX":50,
+  "posY":90,
+  "satelite":33,
+  "moon":30,
+  "moon2":20,
+  "moon3":35,
+  "moon4":15,
+  "moveX":[0.25,-0.35,0.14,-1,-0.35,0.1,0.27,-0.9],
+  "moveY":[0.55,-0.15,0.14,-3,-0.13,1,-0.1,0.8],
+  "nextX":0,
+  "nextY":0,
+  "surfaceArea":"23.71 billion mi²"
+},
+
+{
+  "name":"Neptune",
+  "r":4,
+  "g":150,
+  "b":247,
+  "head": 120,
+  "posX":190,
+  "posY":100,
+  "satelite": 25,
+  "moon":40,
+  "moon2":20,
+  "moon3":15,
+  "moveX":[0.2,-0.5,0.4,-2,-0.3,0.3,0.7,-0.2],
+  "moveY":[0.2,-0.5,0.4,-3,-0.3,3,-0.7,0.2],
+  "nextX":0,
+  "nextY":0,
+  "surfaceArea": "2.941 billion mi²"
+},
+
+{
+  "name":"Earth",
+  "r":102,
+  "g":193,
+  "b":255,
+  "head": 80,
+  "satelite": 15,
+  "posX":50,
+  "posY":50,
+  "satelite": 25,
+  "moon":20,
+  "moveX":[5,-3,4,-6,-3,3,4,-2],
+  "moveY":[2,4,4,6,-3,3,4,-2],
+  "nextX":0,
+  "nextY":0,
+  "surfaceArea":"196.9 million mi²"
+}
+
+
+
+]
+
+}

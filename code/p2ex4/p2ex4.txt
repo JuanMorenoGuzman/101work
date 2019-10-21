@@ -1,0 +1,164 @@
+float counter = 0.0;
+float speed = .50;
+float xoff = 0.0;
+
+
+Car myCar1; // Two objects!
+Car myCar2; 
+Car[] cararray = new Car[80];
+
+
+void setup() {
+  size(900,500);
+  noStroke();
+
+  // Parameters go inside the parentheses when the object is constructed.
+  //myCar1 = new Car(color (255,0,0),0,100,2,.2); 
+  //myCar2 = new Car(color(0,0,255),0,50,1, .1);
+  
+  for (int i = 0; i < cararray.length; i++) {
+      
+   cararray[i] = new Car(color( int(random(255)), int(random(255)),int(random(255)),
+   255-int(random(150)) ),random(250),random(500),random(20),random(25));
+  }
+  
+}
+
+void draw() {
+  background(0);
+  
+  pushMatrix();
+  translate(250,350);
+  rotate(radians(counter));
+  translate(counter,50);
+  scale(counter/50);
+  color(255, 106, 0);
+  ellipse(0,0,50,50); 
+  popMatrix();
+  
+  pushMatrix();
+  translate(600,150);
+  rotate(radians(counter));
+  translate(counter,50);
+  scale(counter/50);
+  color(255, 106, 0);
+  ellipse(0,0,50,50); 
+  popMatrix();
+  
+  pushMatrix();
+  translate(100,150);
+  rotate(radians(counter));
+  translate(counter,50);
+  scale(counter/50);
+  color(255, 106, 0);
+  ellipse(0,0,50,50); 
+  popMatrix();
+  
+  pushMatrix();
+  translate(300,50);
+  rotate(radians(counter));
+  translate(counter,50);
+  scale(counter/50);
+  color(255, 106, 0);
+  ellipse(0,0,50,50); 
+  popMatrix();
+  
+  pushMatrix();
+  translate(700,350);
+  rotate(radians(counter));
+  translate(counter,50);
+  scale(counter/50);
+  color(255, 106, 0);
+  ellipse(0,0,50,50); 
+  popMatrix();
+  
+  xoff = xoff + .01;
+  float n = noise(xoff) * width;
+  line(n, 0, n, height);
+  
+  
+  
+  
+  counter+=speed;
+  
+  if (counter > width || counter<0 ) {
+    speed = -speed;
+  }
+  
+  for (int i = 0; i < cararray.length; i++) {
+  cararray[i].update();
+  cararray[i].display();
+  
+  //saveFrame("frames/ex1-#####.png");
+  frameRate(30);
+}}
+  void mousePressed() {
+  
+  println("changing");
+  for (int i = 0; i < cararray.length; i++) {
+  cararray[i].newranspeed();
+  }
+  
+  
+}
+
+
+class Car { 
+  color c;
+  float xpos;
+  float ypos;
+  float xspeed;
+  float yspeed;
+  
+
+  
+  Car(color tempC, float tempXpos, float tempYpos, float tempXspeed,float rotspeed) { 
+    c = tempC;
+    xpos = tempXpos;
+    ypos = tempYpos;
+    xspeed = tempXspeed;
+    
+    
+  }
+
+  void display() {
+    //stroke(0);
+    fill(c);
+    //rectMode(CENTER);
+    //rect(xpos,ypos,20,10);
+    rect(xpos,ypos,20,10);
+    
+    //rect(xpos,ypos,15,15);
+    //xspeed = 4;
+
+    
+  }
+void update() {
+  xpos = xpos + xspeed;
+    ypos = ypos + yspeed;
+    
+    if (xpos > width) {
+      xpos = 0;
+    }
+    
+    if (xpos < 0) {
+      xpos = width;
+    }
+    
+    if (ypos > height) {
+      ypos = 0;
+    }
+    
+    if (ypos < 0) {
+      ypos = height;
+    }
+  }
+    void newranspeed() {
+    xspeed = 3 - random(7);
+    yspeed = 3 - random(7);
+    
+
+    
+  }
+  }
+  

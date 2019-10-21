@@ -1,0 +1,47 @@
+{
+   "items":[
+      {
+         "name":"Magma",
+         "avgStars":"4.61",
+         "cost":"700",
+         "description": "",
+         "transparent": "https://fortnite-public-files.theapinetwork.com/wrap/f51a8a5e49011483a87c55680db3548b.png"
+      },
+      {
+         "name":"Nightwitch",
+         "avgStars":"3.55",
+         "cost":"1500",
+         "description": "Rise with the moon.",
+         "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/4d81831501af614e84f9c273bf05469d.png"
+      },
+      {
+         "name":"Molten Battle Hound",
+         "avgStars":"4.58",
+         "cost":"0",
+         "description": "Release the molten hound!",
+         "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/afaa8546c80d88a3fb6e6a20656ed001.png"
+      },
+      {
+         "name":"Shaman",
+         "avgStars":"3.21",
+         "cost":"1500",
+         "description": "Embody the spirit of victory.",
+         "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/ddebb7024f8182b0cc863e11a50b25e9.png"
+      },
+      {
+         "name":"Dark Vanguard",
+         "avgStars":"4.02",
+         "cost":"2000",
+         "description": "Exploring the outer limits.",
+         "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/a6b5ef2c3f7831274fa5fc02f08c54a4.png"
+      },
+      {
+         "name":"Fire Spinner",
+         "avgStars":"4.33",
+         "cost":"800",
+         "description": "Head it up.",
+         "transparent": "https://fortnite-public-files.theapinetwork.com/emote/5050c928ead709fd94b98132cace0f2a.png"
+
+      }
+   ]
+}
